@@ -1,0 +1,40 @@
+apply plugin: 'com.android.application'
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "com.jxust.gis.jxusttravelapp"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile project(':icemung')
+    compile 'cn.bmob.android:bmob-sdk:3.4.5'
+    //SCViewPager for welcome page
+    compile 'com.dev.sacot41:scviewpager:0.0.4'
+    //datetime picker
+    compile 'com.wdullaer:materialdatetimepicker:2.2.0'
+    //material text view
+    compile 'com.rengwuxian.materialedittext:library:2.1.4'
+    //波纹效果
+    compile 'com.balysv:material-ripple:1.0.2'
+    //expand layout
+    compile 'com.github.aakira:expandable-layout:1.4.3@aar'
+    compile 'com.gordonwong:material-sheet-fab:1.2.1'
+    compile('com.github.afollestad.material-dialogs:core:0.8.5.7@aar') {
+        transitive = true
+    }
+}

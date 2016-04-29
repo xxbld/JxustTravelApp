@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_school"
+            android:icon="@drawable/selector_ic_school"
+            android:title="@string/nav_menu_school"/>
+        <item
+            android:id="@+id/nav_daily"
+            android:icon="@drawable/selector_ic_school"
+            android:title="@string/nav_menu_daily"/>
+        <item
+            android:id="@+id/nav_verbose"
+            android:icon="@drawable/selector_ic_school"
+            android:title="@string/nav_menu_verbose"/>
+        <item
+            android:id="@+id/nav_resume"
+            android:icon="@drawable/selector_ic_school"
+            android:title="@string/nav_menu_resume"/>
+
+        <item android:title="@string/nav_about">
+            <menu>
+                <item
+                    android:id="@+id/nav_theme"
+                    android:icon="@drawable/selector_ic_school"
+                    android:title="@string/nav_theme"/>
+                <item
+                    android:id="@+id/nav_setting"
+                    android:icon="@drawable/selector_ic_school"
+                    android:title="@string/nav_setting"/>
+            </menu>
+        </item>
+    </group>
+</menu>
